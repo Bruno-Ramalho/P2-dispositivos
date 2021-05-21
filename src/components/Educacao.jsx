@@ -53,7 +53,7 @@ function Educacao() {
         <button type="button" onClick={() => setAdicionar(true)} >Nova nota</button>
         <Lista />
         {adiconar ?
-          <contextoForm.Provider value={{ cadastrarDados }}>
+          <contextoForm.Provider value={{ cadastrarDados, setTituloNota, setCategoriaNota, setValorNota }}>
             <h1>MINHA NOTA</h1>
             <Form />
           </contextoForm.Provider>

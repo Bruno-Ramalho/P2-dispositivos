@@ -6,7 +6,7 @@ import contextoForm from "../contexts/contextoForm"
 function Form() {
   return (
     <contextoForm.Consumer>
-      {({  cadastrarDados }) => (
+      {({ cadastrarDados, setTituloNota, setCategoriaNota, setValorNota}) => (
 
         <>
           <form>
